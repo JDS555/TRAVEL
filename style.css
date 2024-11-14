@@ -66,3 +66,34 @@ dd {
 !!VARIABLES
 ///
 */
+
+:root {
+  /* --global-background-color: ;
+
+  --main-text-color: ;
+  --main-background-color: ;
+  --main-decoration-color: ;
+
+  --second-text-color: ;
+  --second-background-color: ;
+  --second-decoration-color: ;
+
+  --third-text-color: ;
+  --third-background-color: ; */
+}
+
+/*
+///
+!!GLOBAL_STYLES
+///
+*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
