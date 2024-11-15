@@ -474,11 +474,68 @@ footer {
   align-items: center;
   width: 1177px;
   height: 247px;
-  margin-top: 79px;
+  margin-top: 81px;
   margin-bottom: 97px;
   margin-left: 131px;
 }
 
+.steps-header {
+  margin-bottom: 40px;
+}
+
+.steps-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1177px;
+}
+
+.steps-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-decorator {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+}
+
+.step-1 {
+  background-image: url(./assets/images/background-step-1-D.png);
+}
+
+.step-2 {
+  background-image: url(./assets/images/background-step-2-D.png);
+}
+
+.step-3 {
+  background-image: url(./assets/images/background-step-3-D.png);
+}
+
+.step-text {
+  font-family: "Aleo", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: -0.3px;
+}
+
+.steps-item-2 {
+  margin-left: 67px;
+}
+
+/*
+///
+!!DESTINATIONS
+///
+*/
 
 
 /*
