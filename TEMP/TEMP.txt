@@ -40,43 +40,28 @@ LINK
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Magra:wght@400;700&family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
-
-///
-
-.magra-regular {
-  font-family: "Magra", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.magra-bold {
-  font-family: "Magra", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
+<link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 
 
 ///
 
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
+Red Hat Text
+
+.red-hat-text-<uniquifier> {
+  font-family: "Red Hat Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+///
+
+Aleo
 
 .aleo-<uniquifier> {
   font-family: "Aleo", serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
-  font-style: normal;
-}
-
-///
-
-// <uniquifier>: Use a unique and descriptive class name
-
-.red-hat-text-<uniquifier> {
-  font-family: "Red Hat Text", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
   font-style: normal;
 }
 
@@ -104,7 +89,11 @@ text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
 
+///
+
 НУ И 1 РАЗ MARGA В НАВИГАЦИИ
+
+ПОДКЛЮЧЕНИЕ ЧЕРЕЗ @fonts
 
 ///
 
@@ -120,9 +109,9 @@ COLORS GLOBAL VARIABLES
   /* FOR CUBS AND PLACEHOLDES */
 
   --second-text-color: #FFFFFF;
-  --second-background-color: #F2785CB2;
+  --second-background-color: rgba(242, 120, 92, 0.7);
   /* FOR NAV BLOCK */
-  --second-decoration-color: #0D606F80;
+  --second-decoration-color: rgba(13, 96, 111, 0.5);
   /* FOR SHADOW UNDER NAV BLOCK AND SHADOW UNDER STORIES IMAGES */
 
   --third-text-color: #F2785C80;

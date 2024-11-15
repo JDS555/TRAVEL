@@ -61,6 +61,19 @@ dd {
   margin: 0;
 }
 
+/* 
+///
+!!FONT MAGRA
+///
+*/
+
+@font-face {
+  font-family: "Magra";
+  src: url("./assets/fonts/Magra-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
 /*
 ///
 !!VARIABLES
@@ -77,9 +90,9 @@ dd {
   /* FOR CUBS AND PLACEHOLDES */
 
   --second-text-color: #FFFFFF;
-  --second-background-color: #F2785CB2;
+  --second-background-color: rgba(242, 120, 92, 0.7);
   /* FOR NAV BLOCK */
-  --second-decoration-color: #0D606F80;
+  --second-decoration-color: rgba(13, 96, 111, 0.5);
   /* FOR SHADOW UNDER NAV BLOCK AND SHADOW UNDER STORIES IMAGES */
 
   --third-text-color: #F2785C80;
@@ -126,8 +139,34 @@ body {
   font-style: normal;
   color: var(--main-text-color);
 
-
   background-color: var(--global-background-color);
+}
+
+header {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  flex-direction: column;
+
+  background-color: var(--main-background-color);
+}
+
+main {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  flex-direction: column;
+
+  background-color: var(--main-background-color);
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  flex-direction: column;
+
+  background-color: var(--main-background-color);
 }
 
 /*
@@ -136,6 +175,51 @@ body {
 ///
 */
 
+.header {
+  min-height: 765px;
+  justify-content: flex-start;
+
+  background-image: url("./assets/images/background-header-D.png");
+  background-position: center;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90px;
+  color: var(--second-text-color);
+
+  -webkit-box-shadow: 0px 4px 4px 0px var(--second-decoration-color);
+  -moz-box-shadow: 0px 4px 4px 0px var(--second-decoration-color);
+  box-shadow: 0px 4px 4px 0px var(--second-decoration-color);
+  background-color: var(--second-background-color);
+}
+
+.main-logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 26px;
+  margin-left: 120px;
+}
+
+.main-logo {
+  display: flex;
+  margin-right: 6px;
+  opacity: inherit;
+}
+
+.main-logo-text {
+  display: flex;
+  font-family: "Magra";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.88px;
+  text-align: left;
+  color: var(--second-text-color);
+  opacity: inherit;
+}
 
 /*
 ///
