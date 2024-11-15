@@ -95,7 +95,7 @@ dd {
   --second-decoration-color: rgba(13, 96, 111, 0.5);
   /* FOR SHADOW UNDER NAV BLOCK AND SHADOW UNDER STORIES IMAGES */
 
-  --third-text-color: #F2785C80;
+  --third-text-color: #F2785C;
   /* FOR UNCURRENT TABS */
   --third-background-color: #0D606F;
   /* FOR BLUE BUTTONS */
@@ -175,6 +175,16 @@ footer {
   background-color: var(--main-background-color);
 }
 
+.second-header {
+  font-family: "Red Hat Text", serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 52.92px;
+  text-align: left;
+  color: var(--third-text-color);
+
+}
+
 /*
 ///
 !!HEADER
@@ -202,8 +212,6 @@ footer {
   height: 90px;
   color: var(--second-text-color);
 
-  -webkit-box-shadow: 0px 4px 4px 0px var(--second-decoration-color);
-  -moz-box-shadow: 0px 4px 4px 0px var(--second-decoration-color);
   box-shadow: 0px 4px 4px 0px var(--second-decoration-color);
   background-color: var(--second-background-color);
 }
@@ -255,7 +263,7 @@ footer {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
-  letter-spacing: 170%;
+  letter-spacing: -0.05px;
   text-align: left;
 }
 
@@ -341,6 +349,8 @@ footer {
   display: flex;
   flex-direction: column;
   max-width: 892px;
+
+  cursor: default;
 }
 
 .preview-main-header {
@@ -442,6 +452,33 @@ footer {
 !!MAIN
 ///
 */
+
+
+/*
+///
+!!STEPS
+///
+*/
+
+.steps {
+  display: flex;
+  justify-content: flex-start;
+
+  background-color: var(--main-background-color);
+}
+
+.steps-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 1177px;
+  height: 247px;
+  margin-top: 79px;
+  margin-bottom: 97px;
+  margin-left: 131px;
+}
+
 
 
 /*

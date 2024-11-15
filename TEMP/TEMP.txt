@@ -90,12 +90,12 @@ COLORS GLOBAL VARIABLES
   --second-decoration-color: rgba(13, 96, 111, 0.5);
   /* FOR SHADOW UNDER NAV BLOCK AND SHADOW UNDER STORIES IMAGES */
 
-  --third-text-color: #F2785C80;
+  --third-text-color: #F2785C;
   /* FOR UNCURRENT TABS */
   --third-background-color: #0D606F;
   /* FOR BLUE BUTTONS */
 
-  --fourth-background-color: #FFFFFFB2;
+  --fours-background-color: #FFFFFFB2;
   /* FOR BLOCK STORIES */
 }
 
