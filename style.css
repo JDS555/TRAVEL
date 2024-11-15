@@ -544,6 +544,135 @@ footer {
 ///
 */
 
+.destinations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* hidden / visible */
+}
+
+.destinations-images-list {
+  display: flex;
+  flex-direction: row;
+  width: 2520px;
+  margin-top: 45px;
+  gap: 60px;
+  overflow: hidden;
+}
+
+.destinations-image {
+  position: relative;
+  border-radius: 16px;
+}
+
+.image-description {
+  position: relative;
+  top: -82px;
+  left: 17px;
+  font-family: "Red Hat Text", serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42.34px;
+  text-align: left;
+  color: var(--second-text-color);
+}
+
+.pagination-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: -17px;
+  margin-left: 2px;
+  gap: 10px;
+}
+
+.paginarion-button {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #F2785C80;
+
+  cursor: pointer;
+  transition: 1s;
+}
+
+.button-current {
+  background-color: var(--main-decoration-color);
+}
+
+.paginarion-button:focus,
+.paginarion-button:hover {
+  background-color: #f2775cb9;
+  transition: 1s;
+}
+
+.paginarion-button:active {
+  background-color: var(--main-decoration-color);
+  transition: 1s;
+}
+
+.button-current:focus,
+.button-current:hover,
+.button-current:active {
+  background-color: var(--main-decoration-color);
+}
+
+.destinations-button-wrapper {
+  position: relative;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.destinations-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 228px;
+  height: 59px;
+  margin-top: 39px;
+  margin-left: 2px;
+
+  border-radius: 10px;
+  background-color: var(--third-background-color);
+}
+
+.destinations-button-decorator {
+  display: flex;
+  margin-top: -1px;
+  margin-left: -5px;
+  width: 40px;
+  height: 40px;
+  background-image: url(./assets/icons/arrow-right-logo.svg);
+}
+
+.destinations-button-text {
+  display: flex;
+  margin-left: 9px;
+  font-family: "Red Hat Text", serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31.75px;
+  text-align: left;
+  color: var(--second-text-color);
+}
+
+.destinations-button:focus,
+.destinations-button:hover {
+  transition: 0.2s;
+  background-color: #0d606fd3;
+}
+
+.destinations-button:active {
+  position: relative;
+  box-shadow: none;
+  top: 1px;
+  left: 1px;
+  transition-property: top, left;
+  transition-duration: 1s, 1s;
+}
 
 /*
 ///
