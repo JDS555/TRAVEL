@@ -68,18 +68,27 @@ dd {
 */
 
 :root {
-  /* --global-background-color: ;
+  --global-background-color: #E5E5E5;
 
-  --main-text-color: ;
-  --main-background-color: ;
-  --main-decoration-color: ;
+  --main-text-color: #0D606F;
+  --main-background-color: #FFFFFF;
+  /* FOR TEXT UNDER CUBS  */
+  --main-decoration-color: #F2785C;
+  /* FOR CUBS AND PLACEHOLDES */
 
-  --second-text-color: ;
-  --second-background-color: ;
-  --second-decoration-color: ;
+  --second-text-color: #FFFFFF;
+  --second-background-color: #F2785CB2;
+  /* FOR NAV BLOCK */
+  --second-decoration-color: #0D606F80;
+  /* FOR SHADOW UNDER NAV BLOCK AND SHADOW UNDER STORIES IMAGES */
 
-  --third-text-color: ;
-  --third-background-color: ; */
+  --third-text-color: #F2785C80;
+  /* FOR UNCURRENT TABS */
+  --third-background-color: #0D606F;
+  /* FOR BLUE BUTTONS */
+
+  --fours-background-color: #FFFFFFB2;
+  /* FOR BLOCK STORIES */
 }
 
 /*
@@ -97,3 +106,46 @@ dd {
   overflow: hidden;
   border: 0;
 }
+
+body {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Aleo", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: var(--main-text-color);
+
+
+  background-color: var(--global-background-color);
+}
+
+/*
+///
+!!HEADER
+///
+*/
+
+
+/*
+///
+!!MAIN
+///
+*/
+
+
+/*
+///
+!FOOTER
+///
+*/

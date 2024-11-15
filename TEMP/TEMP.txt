@@ -19,14 +19,119 @@ FAVICON
 
 ///
 
+FONTS
+
+Magra /// main-logo
+500
+
+ДЕЛАТЬ ТЕКСТОВЫМ ЭЛЕМЕНТОМ
+
+Red Hat Text /// h2 header / button
+500
+
+Aleo /// h1 / h3 / text / a
+italic
+700
+400
+
+GOOGLE FONTS
+
+LINK
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Magra:wght@400;700&family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
+
+///
+
+.magra-regular {
+  font-family: "Magra", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.magra-bold {
+  font-family: "Magra", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+///
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.aleo-<uniquifier> {
+  font-family: "Aleo", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+///
+
+// <uniquifier>: Use a unique and descriptive class name
+
+.red-hat-text-<uniquifier> {
+  font-family: "Red Hat Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+///
+
+Основной шрифт
+
+font-family: Aleo;
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
 
 
 
+Дополнительный шрифт
 
+font-family: Red Hat Text;
+font-size: 40px;
+font-weight: 500;
+line-height: 52.92px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
 
+НУ И 1 РАЗ MARGA В НАВИГАЦИИ
 
+///
 
+COLORS GLOBAL VARIABLES
 
+:root {
+  --global-background-color: #E5E5E5;
 
+  --main-text-color: #0D606F;
+  --main-background-color: #FFFFFF;
+  /* FOR TEXT UNDER CUBS  */
+  --main-decoration-color: #F2785C;
+  /* FOR CUBS AND PLACEHOLDES */
 
+  --second-text-color: #FFFFFF;
+  --second-background-color: #F2785CB2;
+  /* FOR NAV BLOCK */
+  --second-decoration-color: #0D606F80;
+  /* FOR SHADOW UNDER NAV BLOCK AND SHADOW UNDER STORIES IMAGES */
 
+  --third-text-color: #F2785C80;
+  /* FOR UNCURRENT TABS */
+  --third-background-color: #0D606F;
+  /* FOR BLUE BUTTONS */
+
+  --fours-background-color: #FFFFFFB2;
+  /* FOR BLOCK STORIES */
+}
+
+///
