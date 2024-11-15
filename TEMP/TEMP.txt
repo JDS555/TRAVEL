@@ -67,30 +67,6 @@ Aleo
 
 ///
 
-Основной шрифт
-
-font-family: Aleo;
-font-size: 20px;
-font-weight: 400;
-line-height: 24px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
-
-
-Дополнительный шрифт
-
-font-family: Red Hat Text;
-font-size: 40px;
-font-weight: 500;
-line-height: 52.92px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
-///
-
 НУ И 1 РАЗ MARGA В НАВИГАЦИИ
 
 ПОДКЛЮЧЕНИЕ ЧЕРЕЗ @fonts
@@ -119,8 +95,15 @@ COLORS GLOBAL VARIABLES
   --third-background-color: #0D606F;
   /* FOR BLUE BUTTONS */
 
-  --fours-background-color: #FFFFFFB2;
+  --fourth-background-color: #FFFFFFB2;
   /* FOR BLOCK STORIES */
+  --fourth-decoration-color: ;
 }
+
+///
+
+ЗАПРЕТ ВЫДЕЛЕНИЯ
+
+user-select: none;
 
 ///

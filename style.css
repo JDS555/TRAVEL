@@ -135,11 +135,17 @@ body {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  font-optical-sizing: auto;
   font-style: normal;
   color: var(--main-text-color);
 
   background-color: var(--global-background-color);
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
 }
 
 header {
@@ -183,6 +189,12 @@ footer {
   background-position: center;
 }
 
+/*
+///
+!!NAVIGATION
+///
+*/
+
 .main-navigation {
   display: flex;
   flex-direction: row;
@@ -207,7 +219,8 @@ footer {
 .main-logo {
   display: flex;
   margin-right: 6px;
-  opacity: inherit;
+
+  user-select: none
 }
 
 .main-logo-text {
@@ -218,8 +231,102 @@ footer {
   line-height: 38.88px;
   text-align: left;
   color: var(--second-text-color);
-  opacity: inherit;
+
+  cursor: default;
 }
+
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  max-width: 527px;
+  height: 21px;
+  margin-top: 35px;
+  margin-right: 28px;
+  gap: 42px;
+}
+
+.navigation-item {
+  display: flex;
+}
+
+.navigation-link {
+  position: relative;
+  font-family: "Red Hat Text", serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 170%;
+  text-align: left;
+}
+
+.navigation-link::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 2px;
+
+  background-color: var(--second-text-color);
+
+  transform: scaleX(0);
+  transition: 0.5s;
+}
+
+.navigation-link:focus::before,
+.navigation-link:hover::before,
+.navigation-link:active::before {
+  transform: scaleX(1);
+}
+
+.navigation-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 103px;
+  height: 41px;
+  margin-top: 25px;
+  margin-right: 119px;
+
+  font-family: "Red Hat Text", serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.17px;
+  text-align: left;
+  color: var(--second-text-color);
+
+  box-shadow: 0px 2px 3px 0px rgba(13, 96, 111, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+
+  background-color: var(--third-background-color);
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.navigation-button:focus,
+.navigation-button:hover {
+  transition: 0.2s;
+  background-color: #0d606fd3;
+}
+
+.navigation-button:active {
+  position: relative;
+  box-shadow: none;
+  top: 1px;
+  left: 1px;
+  transition-property: top, left;
+  transition-duration: 1s, 1s;
+}
+
+/*
+///
+!!PREVIEW
+///
+*/
 
 /*
 ///
