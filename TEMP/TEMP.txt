@@ -97,7 +97,6 @@ COLORS GLOBAL VARIABLES
 
   --fourth-background-color: #FFFFFFB2;
   /* FOR BLOCK STORIES */
-  --fourth-decoration-color: ;
 }
 
 ///

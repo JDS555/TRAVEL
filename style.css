@@ -328,6 +328,115 @@ footer {
 ///
 */
 
+.preview {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 32px;
+  margin-left: 120px;
+}
+
+.preview-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 892px;
+}
+
+.preview-main-header {
+  font-family: "Aleo", serif;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 96px;
+  text-align: left;
+  letter-spacing: -0.97px;
+  /* Тут не могу подобрать нужное значение */
+  /* Не сходиться никак( */
+  color: var(--second-text-color);
+}
+
+.preview-text {
+  margin-top: 31px;
+
+  font-family: "Aleo", serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: -0.35px;
+  color: var(--second-text-color);
+}
+
+.preview-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 46px;
+}
+
+.form-input-text {
+  position: relative;
+  display: flex;
+  width: 892px;
+  height: 95px;
+  border: none;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-left: 41px;
+
+  font-family: "Aleo", serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  letter-spacing: -0.85px;
+}
+
+.form-input-text::placeholder {
+  color: rgba(242, 120, 92, 1);
+}
+
+.form-button {
+  position: relative;
+  top: -76px;
+  left: 646px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 228px;
+  height: 59px;
+
+  font-family: "Red Hat Text", serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31.75px;
+  text-align: left;
+  color: var(--second-text-color);
+
+  border-radius: 10px;
+  background-color: var(--third-background-color);
+
+  cursor: pointer;
+}
+
+.form-button:focus,
+.form-button:hover {
+  transition: 0.2s;
+  background-color: #0d606fd3;
+}
+
+.form-button:active {
+  position: relative;
+  box-shadow: none;
+  top: -75px;
+  left: 647px;
+  transition-property: top, left;
+  transition-duration: 0s, 0s;
+}
+
 /*
 ///
 !!MAIN
