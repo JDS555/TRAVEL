@@ -120,6 +120,10 @@ dd {
   border: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   width: 100%;
