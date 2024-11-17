@@ -710,6 +710,12 @@ footer {
   width: 100%;
 }
 
+/*
+///
+!STORIES HEADER
+///
+*/
+
 .stories-header {
   margin-bottom: 40px;
 }
@@ -726,6 +732,12 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+/*
+///
+!STORIES
+///
+*/
 
 .stories-list-wrapper {
   display: flex;
@@ -805,3 +817,11 @@ footer {
   text-decoration-line: underline;
   text-decoration-style: solid;
 }
+
+/*
+///
+!FOOTER NAVIGATION
+///
+*/
+
+.footer-navigation {}
