@@ -74,6 +74,13 @@ dd {
   font-weight: 600;
 }
 
+
+/*
+///
+DESKKTOP VERSION
+///
+*/
+
 /*
 ///
 !!VARIABLES
@@ -225,7 +232,7 @@ footer {
   margin-left: -5px;
   width: 40px;
   height: 40px;
-  background-image: url(./assets/icons/arrow-right-logo.svg);
+  background-image: url("./assets/icons/arrow-right-logo.svg");
 }
 
 .arrow-button-text {
@@ -574,15 +581,15 @@ footer {
 }
 
 .step-1 {
-  background-image: url(./assets/images/background-step-1-D.png);
+  background-image: url("./assets/images/background-step-1-D.png");
 }
 
 .step-2 {
-  background-image: url(./assets/images/background-step-2-D.png);
+  background-image: url("./assets/images/background-step-2-D.png");
 }
 
 .step-3 {
-  background-image: url(./assets/images/background-step-3-D.png);
+  background-image: url("./assets/images/background-step-3-D.png");
 }
 
 .step-text {
@@ -633,6 +640,7 @@ footer {
   position: relative;
   top: -82px;
   left: 17px;
+
   font-family: "Red Hat Text", serif;
   font-size: 32px;
   font-weight: 500;
@@ -728,7 +736,7 @@ footer {
   width: 100%;
   min-height: 1331px;
 
-  background-image: url(./assets/images/background-footer-D.png);
+  background-image: url("./assets/images/background-footer-D.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -835,4 +843,62 @@ footer {
 ///
 */
 
-.footer-navigation {}
+.footer-navigation-wrapper {
+  display: flex;
+  width: 100%;
+  min-height: 60px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 729px;
+  margin-right: 121px;
+}
+
+.copyright {
+  font-family: "Red Hat Text", serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.17px;
+  text-align: left;
+  color: var(--second-text-color);
+}
+
+.footer-navigation-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-navigation-link {
+  display: flex;
+  width: 33.65px;
+  height: 33.65px;
+}
+
+.link-instagram {
+  background-image: url("./assets/icons/icon-instagram.svg");
+  background-position: center;
+}
+
+.link-youtube {
+  background-image: url("./assets/icons/icon-youtube.svg");
+  background-position: center;
+}
+
+.link-twitter {
+  background-image: url("./assets/icons/icon-twitter.svg");
+  background-position: center;
+}
+
+/*
+///
+MOBILE VERSION
+///
+*/
