@@ -101,7 +101,7 @@ COLORS GLOBAL VARIABLES
 
 ///
 
-ЗАПРЕТ ВЫДЕЛЕНИЯ
+ЗАПРЕТ ВЫДЕЛЕНИЯ ЭЛЕМЕНТОВ
 
 user-select: none;
 
