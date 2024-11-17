@@ -818,6 +818,17 @@ footer {
   text-decoration-style: solid;
 }
 
+.stories-link:focus,
+.stories-link:hover {
+  transition: 0.2s;
+  color: #0d606fab;
+}
+
+.stories-link:active {
+  transition: 0.2s;
+  color: var(--main-decoration-color);
+}
+
 /*
 ///
 !FOOTER NAVIGATION
