@@ -1,6 +1,6 @@
 /*
 ///
-!!SELECTIVE STYLE NULLING
+!!!SELECTIVE STYLE NULLING
 ///
 */
 
@@ -61,9 +61,16 @@ dd {
   margin: 0;
 }
 
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+}
+
 /* 
 ///
-!!FONT MAGRA
+!!!FONT MAGRA
 ///
 */
 
@@ -77,24 +84,23 @@ dd {
 
 /*
 ///
-DESKKTOP VERSION
+!!!DESKKTOP VERSION
 ///
 */
 
 /*
 ///
-!!VARIABLES
+!!!VARIABLES
 ///
 */
 
 :root {
   --global-background-color: #E5E5E5;
+  /* BACKGROUND BEHIND THE PAGE */
 
   --main-text-color: #0D606F;
   --main-background-color: #FFFFFF;
-  /* FOR TEXT UNDER CUBS  */
   --main-decoration-color: #F2785C;
-  /* FOR CUBS AND PLACEHOLDES */
 
   --second-text-color: #FFFFFF;
   --second-background-color: rgba(242, 120, 92, 0.7);
@@ -109,22 +115,45 @@ DESKKTOP VERSION
 
   --fours-background-color: #FFFFFFB2;
   /* FOR BLOCK STORIES */
+
+  --fifth-background-color: #0d606fd3;
+  /* FOR ARROWS BUTTONS AND FOR BUTTON HOVER */
+
+  --sixth-background-color: #0d606fd3;
+  /* FOR NAVIGATION BUTTON ANIMATION */
+
+  --seventh--background-color: rgba(255, 255, 255, 0.7);
+  /* FOR FORM INPUT TEXT */
+
+  --eighth--background-color: rgba(242, 120, 92, 1);
+  /* FOR FORM INPUT TEXT PLACHOLDER*/
+
+  --ninth--background-color: #F2785C80;
+  /* PAGINATION BUTTONS*/
+
+  --tenth--background-color: #f2775ce1;
+  /* PAGINATION BUTTONS ANIMATIONS*/
+
+  --eleventh--background-color: #0d606fab;
+  /* STORIES LINK ANIMATIONS*/
 }
 
 /*
 ///
-!!GLOBAL_STYLES
+!!!GLOBAL_STYLES
 ///
 */
 
 .visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
-  overflow: hidden;
   border: 0;
+
+  overflow: hidden;
 }
 
 html {
@@ -150,13 +179,6 @@ body {
   color: var(--main-text-color);
 
   background-color: var(--global-background-color);
-}
-
-button {
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
 }
 
 header {
@@ -188,6 +210,7 @@ footer {
 
 .second-header {
   display: flex;
+
   font-family: "Red Hat Text", serif;
   font-size: 40px;
   font-weight: 500;
@@ -200,13 +223,13 @@ footer {
 
 .third-header {
   display: flex;
+
   font-family: "Aleo", serif;
   font-size: 35px;
   font-weight: 400;
   line-height: 42px;
   text-align: left;
   letter-spacing: -0.1px;
-
   color: var(--main-text-color);
 
   cursor: default;
@@ -232,12 +255,14 @@ footer {
   margin-left: -5px;
   width: 40px;
   height: 40px;
+
   background-image: url("./assets/icons/arrow-right-logo.svg");
 }
 
 .arrow-button-text {
   display: flex;
   margin-left: 9px;
+
   font-family: "Red Hat Text", serif;
   font-size: 24px;
   font-weight: 500;
@@ -248,15 +273,18 @@ footer {
 
 .arrow-button:focus,
 .arrow-button:hover {
+  background-color: var(--fifth-background-color);
+
   transition: 0.2s;
-  background-color: #0d606fd3;
 }
 
 .arrow-button:active {
   position: relative;
-  box-shadow: none;
   top: 1px;
   left: 1px;
+
+  box-shadow: none;
+
   transition-property: top, left;
   transition-duration: 1s, 1s;
 }
@@ -286,6 +314,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   height: 90px;
+
   color: var(--second-text-color);
 
   box-shadow: 0px 4px 4px 0px var(--second-decoration-color);
@@ -309,6 +338,7 @@ footer {
 
 .main-logo-text {
   display: flex;
+
   font-family: "Magra";
   font-size: 32px;
   font-weight: 700;
@@ -322,11 +352,12 @@ footer {
 .navigation-list {
   display: flex;
   flex-direction: row;
+  gap: 42px;
+
   max-width: 527px;
   height: 21px;
   margin-top: 35px;
   margin-right: 28px;
-  gap: 42px;
 }
 
 .navigation-item {
@@ -335,6 +366,7 @@ footer {
 
 .navigation-link {
   position: relative;
+
   font-family: "Red Hat Text", serif;
   font-size: 16px;
   font-weight: 500;
@@ -367,6 +399,7 @@ footer {
 
 .navigation-button {
   position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -384,7 +417,6 @@ footer {
 
   box-shadow: 0px 2px 3px 0px rgba(13, 96, 111, 0.3);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
-
   background-color: var(--third-background-color);
   border-radius: 10px;
 
@@ -393,15 +425,18 @@ footer {
 
 .navigation-button:focus,
 .navigation-button:hover {
+  background-color: var(--sixth-background-color);
+
   transition: 0.2s;
-  background-color: #0d606fd3;
 }
 
 .navigation-button:active {
   position: relative;
-  box-shadow: none;
   top: 1px;
   left: 1px;
+
+  box-shadow: none;
+
   transition-property: top, left;
   transition-duration: 1s, 1s;
 }
@@ -460,12 +495,10 @@ footer {
 
 .form-input-text {
   position: relative;
+
   display: flex;
   width: 113.5%;
   height: 95px;
-  border: none;
-  border-radius: 16px;
-  background-color: rgba(255, 255, 255, 0.7);
   padding-left: 41px;
 
   font-family: "Aleo", serif;
@@ -474,19 +507,22 @@ footer {
   font-weight: 400;
   line-height: 28.8px;
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
   letter-spacing: -0.85px;
+
+  border: none;
+  border-radius: 16px;
+  background-color: var(--seventh--background-color);
 }
 
 .form-input-text::placeholder {
-  color: rgba(242, 120, 92, 1);
+  color: var(--eighth--background-color);
 }
 
 .form-button {
   position: relative;
   top: -76px;
   left: 646px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -508,15 +544,18 @@ footer {
 
 .form-button:focus,
 .form-button:hover {
+  background-color: var(--fifth-background-color);
+
   transition: 0.2s;
-  background-color: #0d606fd3;
 }
 
 .form-button:active {
   position: relative;
-  box-shadow: none;
   top: -75px;
   left: 647px;
+
+  box-shadow: none;
+
   transition-property: top, left;
   transition-duration: 0s, 0s;
 }
@@ -576,8 +615,9 @@ footer {
   display: flex;
   width: 100px;
   height: 100px;
-  border-radius: 16px;
   margin-bottom: 30px;
+
+  border-radius: 16px;
 }
 
 .step-1 {
@@ -618,6 +658,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   overflow: hidden;
   /* hidden / visible */
 }
@@ -628,6 +669,7 @@ footer {
   width: 2520px;
   margin-top: 45px;
   gap: 60px;
+
   overflow: hidden;
 }
 
@@ -647,6 +689,7 @@ footer {
   line-height: 42.34px;
   text-align: left;
   color: var(--second-text-color);
+
   cursor: default;
 }
 
@@ -662,11 +705,13 @@ footer {
   display: flex;
   width: 20px;
   height: 20px;
+
   border-radius: 50%;
-  background-color: #F2785C80;
+  background-color: var(--ninth--background-color);
+
+  transition: 0.48s;
 
   cursor: pointer;
-  transition: 0.48s;
 }
 
 .button-current {
@@ -675,12 +720,14 @@ footer {
 
 .paginarion-button:focus,
 .paginarion-button:hover {
-  background-color: #f2775ce1;
+  background-color: var(--tenth--background-color);
+
   transition: 0.48s;
 }
 
 .paginarion-button:active {
   background-color: var(--main-decoration-color);
+
   transition: 0.48s;
 }
 
@@ -692,6 +739,7 @@ footer {
 
 .destinations-button-wrapper {
   position: relative;
+
   display: flex;
   margin-bottom: 80px;
 }
@@ -828,13 +876,15 @@ footer {
 
 .stories-link:focus,
 .stories-link:hover {
+  color: var(--eleventh--background-color);
+
   transition: 0.2s;
-  color: #0d606fab;
 }
 
 .stories-link:active {
-  transition: 0.2s;
   color: var(--main-decoration-color);
+
+  transition: 0.2s;
 }
 
 /*
@@ -888,18 +938,21 @@ footer {
 .link-instagram {
   background-image: url("./assets/icons/icon-instagram.svg");
   background-position: center;
+
   transition: 0.48s;
 }
 
 .link-youtube {
   background-image: url("./assets/icons/icon-youtube.svg");
   background-position: center;
+
   transition: 0.48s;
 }
 
 .link-twitter {
   background-image: url("./assets/icons/icon-twitter.svg");
   background-position: center;
+
   transition: 0.48s;
 }
 
@@ -908,6 +961,7 @@ footer {
 .link-instagram:focus,
 .link-instagram:active {
   background-image: url("./assets/icons/icon-instagram-active.svg");
+
   transition: 0.48s;
 }
 
@@ -915,6 +969,7 @@ footer {
 .link-youtube:focus,
 .link-youtube:active {
   background-image: url("./assets/icons/icon-youtube-active.svg");
+
   transition: 0.48s;
 }
 
@@ -922,6 +977,7 @@ footer {
 .link-twitter:focus,
 .link-twitter:active {
   background-image: url("./assets/icons/icon-twitter-active.svg");
+
   transition: 0.48s;
 }
 
