@@ -74,7 +74,6 @@ button {
 ///
 */
 
-
 /*
 ///
 !!!VARIABLES
@@ -169,26 +168,20 @@ footer {
 }
 
 h2 {
-  display: flex;
-
   font-family: "Red Hat Text", serif;
   font-size: 40px;
   font-weight: 500;
   line-height: 52.92px;
-  text-align: left;
   color: var(--for-uncurrent-tabs-placeholder);
 
   cursor: default;
 }
 
 h3 {
-  display: flex;
-
   font-family: "Aleo", serif;
   font-size: 35px;
   font-weight: 400;
   line-height: 42px;
-  text-align: left;
   letter-spacing: -0.1px;
   color: var(--main-text-color);
 
@@ -251,7 +244,7 @@ h3 {
 
 /*
 ///
-!!HEADER
+!!!HEADER
 ///
 */
 
@@ -265,7 +258,7 @@ h3 {
 
 /*
 ///
-!!NAVIGATION
+!!!NAVIGATION
 ///
 */
 
@@ -403,7 +396,7 @@ h3 {
 
 /*
 ///
-!!PREVIEW
+!!!PREVIEW
 ///
 */
 
@@ -522,14 +515,14 @@ h3 {
 
 /*
 ///
-!!MAIN
+!!!MAIN
 ///
 */
 
 
 /*
 ///
-!!STEPS
+!!!STEPS
 ///
 */
 
@@ -609,7 +602,7 @@ h3 {
 
 /*
 ///
-!!DESTINATIONS
+!!!DESTINATIONS
 ///
 */
 
@@ -707,7 +700,7 @@ h3 {
 
 /*
 ///
-!FOOTER
+!!!FOOTER
 ///
 */
 
@@ -728,7 +721,7 @@ h3 {
 
 /*
 ///
-!STORIES HEADER
+!!!STORIES HEADER
 ///
 */
 
@@ -751,7 +744,7 @@ h3 {
 
 /*
 ///
-!STORIES
+!!!STORIES
 ///
 */
 
@@ -849,7 +842,7 @@ h3 {
 
 /*
 ///
-!FOOTER NAVIGATION
+!!!FOOTER NAVIGATION
 ///
 */
 
@@ -943,6 +936,6 @@ h3 {
 
 /*
 ///
-MOBILE VERSION
+!!!MOBILE VERSION
 ///
 */
