@@ -195,7 +195,7 @@ footer {
   background-color: var(--main-background-color);
 }
 
-.second-header {
+h2 {
   display: flex;
 
   font-family: "Red Hat Text", serif;
@@ -208,7 +208,7 @@ footer {
   cursor: default;
 }
 
-.third-header {
+h3 {
   display: flex;
 
   font-family: "Aleo", serif;
