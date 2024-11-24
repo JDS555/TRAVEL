@@ -82,47 +82,20 @@ button {
 */
 
 :root {
-  --global-background-color: #E5E5E5;
-  /* BACKGROUND BEHIND THE PAGE */
-
+  --background-behind-the-page: #E5E5E5;
   --main-text-color: #0D606F;
   --main-background-color: #FFFFFF;
   --main-decoration-color: #F2785C;
-
   --second-text-color: #FFFFFF;
-  --second-background-color: rgba(242, 120, 92, 0.7);
-  /* FOR NAV BLOCK */
-  --second-decoration-color: rgba(13, 96, 111, 0.5);
-  /* FOR SHADOW UNDER NAV BLOCK AND SHADOW UNDER STORIES IMAGES */
-
-  --third-text-color: #F2785C;
-  /* FOR UNCURRENT TABS */
-  --third-background-color: #0D606F;
-  /* FOR BLUE BUTTONS */
-
-  --fours-background-color: #FFFFFFB2;
-  /* FOR BLOCK STORIES */
-
-  --fifth-background-color: #0d606fd3;
-  /* FOR ARROWS BUTTONS AND FOR BUTTON HOVER */
-
-  --sixth-background-color: #0d606fd3;
-  /* FOR NAVIGATION BUTTON ANIMATION */
-
-  --seventh--background-color: rgba(255, 255, 255, 0.7);
-  /* FOR FORM INPUT TEXT */
-
-  --eighth--background-color: rgba(242, 120, 92, 1);
-  /* FOR FORM INPUT TEXT PLACHOLDER*/
-
-  --ninth--background-color: #F2785C80;
-  /* PAGINATION BUTTONS*/
-
-  --tenth--background-color: #f2775ce1;
-  /* PAGINATION BUTTONS ANIMATIONS*/
-
-  --eleventh--background-color: #0d606fab;
-  /* STORIES LINK ANIMATIONS*/
+  --for-nav-block: #f2785cb3;
+  --for-shadows-nav-stories-images: #0d606f80;
+  --for-uncurrent-tabs-placeholder: #F2785C;
+  --for-blue-buttons: #0D606F;
+  --for-input-text-block-stories: #FFFFFFB3;
+  --for-button-navigation-animation: #0d606fd3;
+  --for-radio-buttons: #F2785C80;
+  --for-radio-buttons-animation: #f2775ce1;
+  --for-stories-link-animation: #0d606fab;
 }
 
 /*
@@ -165,7 +138,7 @@ body {
   font-style: normal;
   color: var(--main-text-color);
 
-  background-color: var(--global-background-color);
+  background-color: var(--background-behind-the-page);
 }
 
 header {
@@ -203,7 +176,7 @@ h2 {
   font-weight: 500;
   line-height: 52.92px;
   text-align: left;
-  color: var(--third-text-color);
+  color: var(--for-uncurrent-tabs-placeholder);
 
   cursor: default;
 }
@@ -233,7 +206,7 @@ h3 {
   margin-left: 2px;
 
   border-radius: 10px;
-  background-color: var(--third-background-color);
+  background-color: var(--for-blue-buttons);
 }
 
 .arrow-button-decorator {
@@ -260,7 +233,7 @@ h3 {
 
 .arrow-button:focus,
 .arrow-button:hover {
-  background-color: var(--fifth-background-color);
+  background-color: var(--for-button-navigation-animation);
 
   transition: 0.2s;
 }
@@ -304,8 +277,8 @@ h3 {
 
   color: var(--second-text-color);
 
-  box-shadow: 0px 4px 4px 0px var(--second-decoration-color);
-  background-color: var(--second-background-color);
+  box-shadow: 0px 4px 4px 0px var(--for-shadows-nav-stories-images);
+  background-color: var(--for-nav-block);
 }
 
 .main-logo-wrapper {
@@ -404,7 +377,7 @@ h3 {
 
   box-shadow: 0px 2px 3px 0px rgba(13, 96, 111, 0.3);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
-  background-color: var(--third-background-color);
+  background-color: var(--for-blue-buttons);
   border-radius: 10px;
 
   cursor: pointer;
@@ -412,7 +385,7 @@ h3 {
 
 .navigation-button:focus,
 .navigation-button:hover {
-  background-color: var(--sixth-background-color);
+  background-color: var(--for-button-navigation-animation);
 
   transition: 0.2s;
 }
@@ -498,11 +471,11 @@ h3 {
 
   border: none;
   border-radius: 16px;
-  background-color: var(--seventh--background-color);
+  background-color: var(--for-input-text-block-stories);
 }
 
 .form-input-text::placeholder {
-  color: var(--eighth--background-color);
+  color: var(--for-uncurrent-tabs-placeholder);
 }
 
 .form-button {
@@ -524,14 +497,14 @@ h3 {
   color: var(--second-text-color);
 
   border-radius: 10px;
-  background-color: var(--third-background-color);
+  background-color: var(--for-blue-buttons);
 
   cursor: pointer;
 }
 
 .form-button:focus,
 .form-button:hover {
-  background-color: var(--fifth-background-color);
+  background-color: var(--for-button-navigation-animation);
 
   transition: 0.2s;
 }
@@ -694,7 +667,7 @@ h3 {
   height: 20px;
 
   border-radius: 50%;
-  background-color: var(--ninth--background-color);
+  background-color: var(--for-radio-buttons);
 
   transition: 0.48s;
 
@@ -707,7 +680,7 @@ h3 {
 
 .paginarion-button:focus,
 .paginarion-button:hover {
-  background-color: var(--tenth--background-color);
+  background-color: var(--for-radio-buttons-animation);
 
   transition: 0.48s;
 }
@@ -790,7 +763,7 @@ h3 {
   width: 100%;
   min-height: 1270px;
 
-  background-color: #FFFFFFB2;
+  background-color: var(--for-input-text-block-stories);
 }
 
 .stories-list-wrapper {
@@ -826,7 +799,7 @@ h3 {
   border-radius: 16px;
   margin-right: 40px;
 
-  box-shadow: 0px 4px 4px 0px rgb(13, 96, 111);
+  box-shadow: 0px 4px 4px 0px var(--for-shadows-nav-stories-images);
 }
 
 .stories-text-wrapper {
@@ -863,7 +836,7 @@ h3 {
 
 .stories-link:focus,
 .stories-link:hover {
-  color: var(--eleventh--background-color);
+  color: var(--for-stories-link-animation);
 
   transition: 0.2s;
 }
