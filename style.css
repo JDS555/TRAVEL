@@ -68,25 +68,12 @@ button {
   color: inherit;
 }
 
-/* 
-///
-!!!FONT MAGRA
-///
-*/
-
-@font-face {
-  font-family: "Magra";
-  src: url("./assets/fonts/Magra-Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 600;
-}
-
-
 /*
 ///
 !!!DESKKTOP VERSION
 ///
 */
+
 
 /*
 ///
@@ -333,13 +320,13 @@ footer {
   display: flex;
   margin-right: 6px;
 
-  user-select: none
+  user-select: none;
 }
 
 .main-logo-text {
   display: flex;
 
-  font-family: "Magra";
+  font-family: "Magra", sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 38.88px;
