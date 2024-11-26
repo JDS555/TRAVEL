@@ -86,15 +86,15 @@ button {
   --main-background-color: #FFFFFF;
   --main-decoration-color: #F2785C;
   --second-text-color: #FFFFFF;
-  --for-nav-block: #f2785cb3;
-  --for-shadows-nav-stories-images: #0d606f80;
-  --for-uncurrent-tabs-placeholder: #F2785C;
-  --for-blue-buttons: #0D606F;
-  --for-input-text-block-stories: #FFFFFFB3;
-  --for-button-navigation-animation: #0d606fd3;
-  --for-radio-buttons: #F2785C80;
-  --for-radio-buttons-animation: #f2775ce1;
-  --for-stories-link-animation: #0d606fab;
+  --background-nav-block: #f2785cb3;
+  --shadows-nav-stories-images: #0d606f80;
+  --uncurrent-tabs-placeholder: #F2785C;
+  --initial-buttons: #0D606F;
+  --background-input-stories: #FFFFFFB3;
+  --button-navigation-animation: #0d606fd3;
+  --radio-buttons: #F2785C80;
+  --radio-buttons-animation: #f2775ce1;
+  --stories-link-animation: #0d606fab;
 }
 
 /*
@@ -108,7 +108,7 @@ button {
 
   width: 1px;
   height: 1px;
-  margin: -1px;
+
   padding: 0;
   border: 0;
 
@@ -118,6 +118,8 @@ button {
 html {
   scroll-behavior: smooth;
 }
+
+/* ПЕРЕДЕЛКА ПРОЕКТА */
 
 body {
   display: flex;
@@ -172,7 +174,7 @@ h2 {
   font-size: 40px;
   font-weight: 500;
   line-height: 52.92px;
-  color: var(--for-uncurrent-tabs-placeholder);
+  color: var(--uncurrent-tabs-placeholder);
 
   cursor: default;
 }
@@ -204,8 +206,7 @@ h3 {
 
 .arrow-button-decorator {
   display: flex;
-  margin-top: -1px;
-  margin-left: -5px;
+
   width: 40px;
   height: 40px;
 
@@ -226,7 +227,7 @@ h3 {
 
 .arrow-button:focus,
 .arrow-button:hover {
-  background-color: var(--for-button-navigation-animation);
+  background-color: var(--button-navigation-animation);
 
   transition: 0.2s;
 }
@@ -270,8 +271,8 @@ h3 {
 
   color: var(--second-text-color);
 
-  box-shadow: 0px 4px 4px 0px var(--for-shadows-nav-stories-images);
-  background-color: var(--for-nav-block);
+  box-shadow: 0px 4px 4px 0px var(--shadows-nav-stories-images);
+  background-color: var(--background-nav-block);
 }
 
 .main-logo-wrapper {
@@ -370,7 +371,7 @@ h3 {
 
   box-shadow: 0px 2px 3px 0px rgba(13, 96, 111, 0.3);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
-  background-color: var(--for-blue-buttons);
+  background-color: var(--initial-buttons);
   border-radius: 10px;
 
   cursor: pointer;
@@ -378,7 +379,7 @@ h3 {
 
 .navigation-button:focus,
 .navigation-button:hover {
-  background-color: var(--for-button-navigation-animation);
+  background-color: var(--button-navigation-animation);
 
   transition: 0.2s;
 }
@@ -464,11 +465,11 @@ h3 {
 
   border: none;
   border-radius: 16px;
-  background-color: var(--for-input-text-block-stories);
+  background-color: var(--background-input-stories);
 }
 
 .form-input-text::placeholder {
-  color: var(--for-uncurrent-tabs-placeholder);
+  color: var(--uncurrent-tabs-placeholder);
 }
 
 .form-button {
@@ -490,14 +491,14 @@ h3 {
   color: var(--second-text-color);
 
   border-radius: 10px;
-  background-color: var(--for-blue-buttons);
+  background-color: var(--initial-buttons);
 
   cursor: pointer;
 }
 
 .form-button:focus,
 .form-button:hover {
-  background-color: var(--for-button-navigation-animation);
+  background-color: var(--button-navigation-animation);
 
   transition: 0.2s;
 }
@@ -649,8 +650,7 @@ h3 {
 .pagination-list {
   display: flex;
   flex-direction: row;
-  margin-top: -17px;
-  margin-left: 2px;
+
   gap: 10px;
 }
 
@@ -660,7 +660,7 @@ h3 {
   height: 20px;
 
   border-radius: 50%;
-  background-color: var(--for-radio-buttons);
+  background-color: var(--radio-buttons);
 
   transition: 0.48s;
 
@@ -673,7 +673,7 @@ h3 {
 
 .paginarion-button:focus,
 .paginarion-button:hover {
-  background-color: var(--for-radio-buttons-animation);
+  background-color: var(--radio-buttons-animation);
 
   transition: 0.48s;
 }
@@ -756,7 +756,7 @@ h3 {
   width: 100%;
   min-height: 1270px;
 
-  background-color: var(--for-input-text-block-stories);
+  background-color: var(--background-input-stories);
 }
 
 .stories-list-wrapper {
@@ -792,7 +792,7 @@ h3 {
   border-radius: 16px;
   margin-right: 40px;
 
-  box-shadow: 0px 4px 4px 0px var(--for-shadows-nav-stories-images);
+  box-shadow: 0px 4px 4px 0px var(--shadows-nav-stories-images);
 }
 
 .stories-text-wrapper {
@@ -829,7 +829,7 @@ h3 {
 
 .stories-link:focus,
 .stories-link:hover {
-  color: var(--for-stories-link-animation);
+  color: var(--stories-link-animation);
 
   transition: 0.2s;
 }
