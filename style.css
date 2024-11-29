@@ -413,8 +413,8 @@ h3 {
 
 .form-button:active {
   position: relative;
-  top: -75px;
-  left: 647px;
+  bottom: 75px;
+  right: 17px;
 
   box-shadow: none;
 
@@ -466,38 +466,43 @@ h3 {
   align-items: center;
 }
 
-.step-decorator {
+
+.step-text::before {
+  content: "";
+
+  display: block;
   width: 100px;
   height: 100px;
+  margin-left: 72px;
   margin-bottom: 30px;
 
   border-radius: 16px;
 }
 
-.step-1 {
+.steps-item:nth-of-type(1) .step-text::before {
   background-image: url("./assets/images/background-step-1-D.png");
 }
 
-.step-2 {
+.steps-item:nth-of-type(2) .step-text::before {
+  margin-left: 66px;
+
   background-image: url("./assets/images/background-step-2-D.png");
 }
 
-.step-3 {
+.steps-item:nth-of-type(3) .step-text::before {
+  margin-left: 114px;
+
   background-image: url("./assets/images/background-step-3-D.png");
+  background-repeat: no-repeat;
 }
 
 .step-text {
   font-family: "Aleo", serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  letter-spacing: -0.3px;
 
   cursor: default;
 }
 
-.steps-item-2 {
+.steps-item:nth-of-type(2) {
   margin-left: 67px;
 }
 
@@ -541,7 +546,6 @@ h3 {
   font-size: 32px;
   font-weight: 500;
   line-height: 42.34px;
-  text-align: left;
   color: var(--second-text-color);
 
   cursor: default;
@@ -712,7 +716,6 @@ h3 {
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
-  text-align: left;
   letter-spacing: -0.1px;
 
   cursor: default;
@@ -722,7 +725,6 @@ h3 {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  text-align: left;
   text-decoration-line: underline;
   text-decoration-style: solid;
 }
@@ -769,7 +771,6 @@ h3 {
   font-size: 16px;
   font-weight: 500;
   line-height: 21.17px;
-  text-align: left;
   color: var(--second-text-color);
 
   cursor: default;
