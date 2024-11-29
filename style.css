@@ -134,6 +134,7 @@ footer {
   width: 100%;
   max-width: 1440px;
   flex-direction: column;
+
   background-color: var(--main-background-color);
 
   cursor: default;
@@ -301,22 +302,35 @@ h3 {
 
 /*
 ///
+!!!MAIN
+///
+*/
+
+/*
+///
 !!!PREVIEW
 ///
 */
 
-/* ПЕРЕДЕЛКА ПРОЕКТА */
-
 .preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-image: url(./assets/images/background-preview-D.png);
+  background-repeat: no-repeat;
+
 }
 
 .preview-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+
   margin-top: 122px;
+  margin-right: 24%;
   margin-bottom: 196px;
-  margin-left: 120px;
+  margin-left: 30px;
 
   width: 100%;
   max-width: 892px;
@@ -410,22 +424,15 @@ h3 {
 
 /*
 ///
-!!!MAIN
-///
-*/
-
-
-/*
-///
 !!!STEPS
 ///
 */
 
+/* ПЕРЕДЕЛКА ПРОЕКТА */
+
 .steps {
   display: flex;
-  justify-content: flex-start;
-
-  background-color: var(--main-background-color);
+  justify-content: center;
 }
 
 .steps-wrapper {
@@ -433,11 +440,12 @@ h3 {
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  width: 1177px;
-  height: 247px;
+  width: 100%;
+  max-width: 1177px;
   margin-top: 81px;
+  margin-left: 10px;
   margin-bottom: 97px;
-  margin-left: 131px;
+  margin-right: 10px;
 }
 
 .steps-header {
@@ -446,7 +454,6 @@ h3 {
 
 .steps-list {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 100%;
   max-width: 1177px;
@@ -460,7 +467,6 @@ h3 {
 }
 
 .step-decorator {
-  display: flex;
   width: 100px;
   height: 100px;
   margin-bottom: 30px;
