@@ -217,9 +217,11 @@ h3 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1220px;
-  margin-top: 11px;
-  margin-bottom: 9px;
+  max-width: 1230px;
+  padding-top: 10px;
+  padding-right: 16px;
+  padding-bottom: 10px;
+  padding-left: 16px;
 
   color: var(--second-text-color);
 }
@@ -230,22 +232,18 @@ h3 {
   align-items: center;
   padding-top: 15px;
   padding-bottom: 16px;
-  margin-left: 10px;
 
   cursor: pointer;
-}
-
-.main-logo {
-  margin-right: 6px;
 }
 
 .navigation-list {
   display: flex;
   flex-direction: row;
   margin-right: 45px;
+  padding-left: 20px;
   gap: 42px;
 
-  max-width: 527px;
+  max-width: 547px;
 }
 
 .navigation-item {
@@ -254,8 +252,8 @@ h3 {
 
 .navigation-link {
   position: relative;
-  padding-top: 23px;
-  padding-bottom: 23px;
+  padding-top: 22px;
+  padding-bottom: 24px;
 
   font-family: "Red Hat Text", serif;
   font-size: 16px;
@@ -287,14 +285,12 @@ h3 {
 .login-button {
   width: 103px;
   height: 41px;
-  margin-right: 10px;
 
   font-size: 16px;
   font-weight: 500;
   line-height: 21.17px;
   color: var(--second-text-color);
 
-  box-shadow: 0px 2px 3px 0px #0d606f4d;
   box-shadow: 0px 4px 4px 0px #00000066;
 
   border-radius: 10px;
