@@ -310,12 +310,9 @@ h3 {
 
 .preview {
   display: flex;
-  justify-content: center;
-  align-items: center;
 
   background-image: url(./assets/images/background-preview-D.png);
   background-repeat: no-repeat;
-
 }
 
 .preview-wrapper {
@@ -323,13 +320,12 @@ h3 {
   flex-direction: column;
   align-items: flex-start;
 
-  margin-top: 122px;
-  margin-right: 24%;
-  margin-bottom: 196px;
-  margin-left: 30px;
+  padding-top: 122px;
+  padding-right: 20px;
+  margin-left: 8.5%;
 
   width: 100%;
-  max-width: 892px;
+  max-width: 932px;
 }
 
 .preview-lead {
@@ -379,7 +375,7 @@ h3 {
 
 .form-button {
   position: relative;
-  bottom: 76px;
+  top: -76px;
   right: 18px;
 
   display: flex;
