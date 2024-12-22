@@ -196,6 +196,10 @@ h3 {
   transition-duration: 1s, 1s;
 }
 
+.initial-arrow-button {
+  background-color: var(--initial-buttons);
+}
+
 /*
 ///
 !!!HEADER
@@ -430,12 +434,11 @@ h3 {
 .steps-wrapper {
   display: flex;
   flex-direction: column;
-  justify-items: center;
   align-items: center;
   width: 100%;
+  max-width: 1297px;
   padding-left: 10px;
   padding-right: 10px;
-  max-width: 1297px;
   margin-top: 77px;
   margin-bottom: 100px;
 }
@@ -521,7 +524,7 @@ h3 {
 
 
 
-.destinations-images-list {
+.destinations-wrapper {
   display: flex;
   flex-direction: row;
   width: 2520px;
@@ -569,10 +572,6 @@ h3 {
   transition: 0.48s;
 
   cursor: pointer;
-}
-
-.button-current {
-  background-color: var(--main-decoration-color);
 }
 
 .paginarion-button:focus,
