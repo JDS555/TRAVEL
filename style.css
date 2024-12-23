@@ -657,53 +657,25 @@ h3 {
 
 /*
 ///
-!!!FOOTER
-///
-*/
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.stories {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-/*
-///
-!!!STORIES HEADER
-///
-*/
-
-.stories-header {
-  margin-bottom: 40px;
-}
-
-.footer-background-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  min-height: 1331px;
-
-  background-image: url("./assets/images/background-footer-D.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/*
-///
 !!!STORIES
 ///
 */
+
+/* ЗДЕСЬ ПОТОМ ИСПРАВЬ КУСОК ПО ФОНАМ */
+
+.stories {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.stories-header {
+  margin-bottom: 80px;
+}
 
 .stories-list-wrapper {
   display: flex;
@@ -711,7 +683,6 @@ h3 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 1270px;
 
   background-color: var(--background-input-stories);
 }
@@ -743,7 +714,6 @@ h3 {
 }
 
 .stories-image {
-  display: flex;
   width: 400px;
   height: 250px;
   border-radius: 16px;
@@ -761,7 +731,6 @@ h3 {
 }
 
 .stories-text {
-  display: flex;
   min-height: 184px;
   flex-direction: column;
 
@@ -775,9 +744,7 @@ h3 {
 }
 
 .stories-link {
-  font-size: 20px;
   font-weight: 700;
-  line-height: 24px;
   text-decoration-line: underline;
   text-decoration-style: solid;
 }
@@ -797,7 +764,7 @@ h3 {
 
 /*
 ///
-!!!FOOTER NAVIGATION
+!!!FOOTER
 ///
 */
 
