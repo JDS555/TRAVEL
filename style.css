@@ -786,25 +786,20 @@ h3 {
 .footer {
   z-index: 3;
   background: transparent;
+  align-items: flex-end;
 }
 
 .footer-navigation-wrapper {
   display: flex;
   width: 100%;
-  justify-content: flex-end;
+  max-width: 729px;
+  justify-content: space-between;
   align-items: center;
+  margin-right: 121px;
   padding-top: 15px;
   padding-bottom: 10px;
 }
 
-.footer-navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 729px;
-  margin-right: 121px;
-}
 
 .copyright {
   font-family: "Red Hat Text", serif;
