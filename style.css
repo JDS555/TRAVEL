@@ -208,9 +208,7 @@ h3 {
   background-color: var(--initial-buttons);
 }
 
-
 .initial-arrow-button-decorator {
-  display: flex;
   margin-bottom: 1px;
   margin-right: 5px;
   width: 40px;
@@ -220,8 +218,8 @@ h3 {
 }
 
 .initial-arrow-button-text {
-  display: flex;
-  margin-left: 9px;
+  margin-left: 10px;
+  margin-top: 3px;
 
   font-family: "Red Hat Text", serif;
   font-size: 24px;
@@ -558,7 +556,6 @@ h3 {
   background-repeat: no-repeat;
 }
 
-
 /*
 ///
 !!!DESTINATIONS
@@ -661,28 +658,42 @@ h3 {
 ///
 */
 
-/* ЗДЕСЬ ПОТОМ ИСПРАВЬ КУСОК ПО ФОНАМ */
-
 .stories {
   position: relative;
+  z-index: 3;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .stories-header {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
-.stories-list-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.background-stories-footer {
+  position: absolute;
+  top: 94px;
+  z-index: -5;
+
   width: 100%;
+  height: 80%;
+  min-height: 1332px;
+
+  background-image: url(./assets/images/background-stories-footer-D.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.stories-background-wrapper {
+  position: absolute;
+  top: 93px;
+  z-index: -3;
+
+  width: 100%;
+  height: 70%;
+  min-height: 1270px;
 
   background-color: var(--background-input-stories);
 }
@@ -693,6 +704,9 @@ h3 {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-top: 40px;
+
+  background-color: var(--background-input-stories);
 }
 
 .stories-list {
@@ -701,16 +715,18 @@ h3 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1250px;
   row-gap: 30px;
 }
 
 .stories-item {
   display: flex;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1240px;
   justify-content: space-between;
   align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .stories-image {
@@ -719,7 +735,7 @@ h3 {
   border-radius: 16px;
   margin-right: 40px;
 
-  box-shadow: 0px 4px 4px 0px var(--shadows-nav-stories-images);
+  box-shadow: 0px 4px 4px 0px #0D606F;
 }
 
 .stories-text-wrapper {
@@ -731,13 +747,9 @@ h3 {
 }
 
 .stories-text {
-  min-height: 184px;
+  padding-bottom: 15px;
   flex-direction: column;
 
-  font-family: "Aleo", serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
   letter-spacing: -0.1px;
 
   cursor: default;
@@ -762,19 +774,29 @@ h3 {
   transition: 0.2s;
 }
 
+.stories-button {
+  margin-top: 40px;
+  margin-bottom: 42px;
+}
+
 /*
 ///
 !!!FOOTER
 ///
 */
 
+.footer {
+  z-index: 3;
+  background: transparent;
+}
+
 .footer-navigation-wrapper {
   display: flex;
   width: 100%;
-  height: 100%;
-  min-height: 60px;
   justify-content: flex-end;
   align-items: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
 .footer-navigation {
@@ -804,7 +826,7 @@ h3 {
 }
 
 .footer-navigation-link {
-  display: flex;
+  display: block;
   width: 33.65px;
   height: 33.65px;
 }
