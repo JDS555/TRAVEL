@@ -149,6 +149,8 @@ h1 {
 }
 
 h2 {
+  margin-bottom: 40px;
+
   font-family: "Red Hat Text", serif;
   font-size: 40px;
   font-weight: 500;
@@ -360,6 +362,7 @@ h3 {
 
 .preview {
   display: flex;
+  padding-left: 120px;
 
   background-image: url(./assets/images/background-preview-D.png);
   background-repeat: no-repeat;
@@ -372,8 +375,8 @@ h3 {
 
   padding-top: 122px;
   padding-right: 20px;
-  margin-left: 8.5%;
-  margin-bottom: 200px;
+
+  margin-bottom: 260px;
 
   width: 100%;
   max-width: 932px;
@@ -402,7 +405,7 @@ h3 {
   align-items: flex-end;
   width: 100%;
   max-width: 892px;
-  margin-top: 46px;
+  margin-top: -12px;
 }
 
 .form-input-text {
@@ -426,7 +429,7 @@ h3 {
 
 .form-button {
   position: relative;
-  top: -76px;
+  top: 76px;
   right: 18px;
 
   display: flex;
@@ -474,6 +477,8 @@ h3 {
 .steps {
   display: flex;
   justify-content: center;
+  padding-left: 82px;
+  padding-right: 82px;
 }
 
 .steps-wrapper {
@@ -481,15 +486,8 @@ h3 {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 1297px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-top: 77px;
-  margin-bottom: 100px;
-}
-
-.steps-header {
-  margin-bottom: 40px;
+  padding-top: 77px;
+  padding-bottom: 100px;
 }
 
 .steps-list {
@@ -503,8 +501,7 @@ h3 {
 
 .steps-item {
   display: flex;
-  width: 100%;
-  max-width: 340px;
+  width: 340px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -576,7 +573,6 @@ h3 {
   display: flex;
   flex-direction: row;
   width: 175%;
-  margin-top: 43px;
   gap: 60px;
 
   overflow: hidden;
@@ -668,21 +664,17 @@ h3 {
   align-items: center;
 }
 
-.stories-header {
-  margin-bottom: 40px;
-}
-
 .background-stories-footer {
   position: absolute;
   top: 94px;
   z-index: -5;
 
   width: 100%;
-  min-height: 1332px;
+  height: 1332px;
 
   background-image: url(./assets/images/background-stories-footer-D.png);
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .stories-background-wrapper {
@@ -703,6 +695,8 @@ h3 {
   align-items: center;
   width: 100%;
   padding-top: 40px;
+  padding-right: 95px;
+  padding-left: 95px;
 
   background-color: var(--background-input-stories);
 }
@@ -713,14 +707,12 @@ h3 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1250px;
   row-gap: 30px;
 }
 
 .stories-item {
   display: flex;
   width: 100%;
-  max-width: 1240px;
   justify-content: space-between;
   align-items: center;
   padding-left: 20px;
@@ -731,7 +723,7 @@ h3 {
   width: 400px;
   height: 250px;
   border-radius: 16px;
-  margin-right: 40px;
+  margin-right: 48px;
 
   box-shadow: 0px 4px 4px 0px #0D606F;
 }
@@ -739,13 +731,12 @@ h3 {
 .stories-text-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
   min-height: 250px;
 }
 
 .stories-text {
-  padding-bottom: 15px;
+  margin-top: 24px;
   flex-direction: column;
 
   letter-spacing: -0.1px;
@@ -784,9 +775,13 @@ h3 {
 */
 
 .footer {
+  position: relative;
   z-index: 3;
   background: transparent;
   align-items: flex-end;
+  padding-top: 15px;
+  padding-right: 121px;
+  padding-bottom: 12px;
 }
 
 .footer-navigation-wrapper {
@@ -795,11 +790,7 @@ h3 {
   max-width: 729px;
   justify-content: space-between;
   align-items: center;
-  margin-right: 121px;
-  padding-top: 15px;
-  padding-bottom: 10px;
 }
-
 
 .copyright {
   font-family: "Red Hat Text", serif;
