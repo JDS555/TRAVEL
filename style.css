@@ -140,6 +140,8 @@ footer {
   cursor: default;
 }
 
+
+
 h1 {
   font-family: "Magra", sans-serif;
   font-size: 32px;
@@ -165,6 +167,11 @@ h3 {
   font-weight: 400;
   line-height: 42px;
   color: var(--main-text-color);
+}
+
+.header,
+.footer {
+  padding: 0 120px;
 }
 
 .button {
@@ -212,8 +219,6 @@ h3 {
 }
 
 .button-arrow-decorator {
-  margin-bottom: 1px;
-  margin-right: 5px;
   width: 40px;
   height: 40px;
 
@@ -221,8 +226,6 @@ h3 {
 }
 
 .button-arrow-text {
-  margin-top: 3px;
-
   font-family: "Red Hat Text", serif;
   font-size: 24px;
   font-weight: 500;
@@ -259,7 +262,6 @@ h3 {
   top: 0px;
   align-items: center;
   z-index: 3;
-  padding: 0 120px;
 
   box-shadow: 0px 4px 4px 0px #0d606f80;
   background-color: var(--background-nav-block);
@@ -303,8 +305,7 @@ h3 {
 
 .navigation-link {
   position: relative;
-  padding-top: 22px;
-  padding-bottom: 24px;
+  padding: 24px 0;
 
   font-family: "Red Hat Text", serif;
   font-size: 16px;
@@ -475,8 +476,7 @@ h3 {
 .steps {
   display: flex;
   justify-content: center;
-  padding-left: 82px;
-  padding-right: 82px;
+  padding: 0 82px;
 }
 
 .steps-wrapper {
@@ -693,9 +693,8 @@ h3 {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 0 95px;
   padding-top: 40px;
-  padding-right: 95px;
-  padding-left: 95px;
 
   background-color: var(--background-input-stories);
 }
@@ -714,8 +713,7 @@ h3 {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
 }
 
 .stories-image {
@@ -763,8 +761,7 @@ h3 {
 }
 
 .stories-button {
-  margin-top: 40px;
-  margin-bottom: 42px;
+  margin: 40px 0;
 }
 
 /*
@@ -778,9 +775,7 @@ h3 {
   z-index: 3;
   background: transparent;
   align-items: flex-end;
-  padding-top: 15px;
-  padding-right: 121px;
-  padding-bottom: 12px;
+
 }
 
 .footer-navigation-wrapper {
