@@ -140,8 +140,6 @@ footer {
   cursor: default;
 }
 
-
-
 h1 {
   font-family: "Magra", sans-serif;
   font-size: 32px;
@@ -218,6 +216,8 @@ h3 {
 
   border-radius: 10px;
   background-color: var(--buttons);
+
+  cursor: pointer;
 }
 
 .button-arrow-decorator {
@@ -509,8 +509,6 @@ h3 {
   align-items: center;
 
   font-family: "Aleo", serif;
-
-  cursor: default;
 }
 
 .step-text::before {
@@ -588,8 +586,6 @@ h3 {
   line-height: 42.34px;
   color: var(--second-text-color);
   text-transform: uppercase;
-
-  cursor: default;
 }
 
 .radio-wrapper {
@@ -727,8 +723,6 @@ h3 {
   flex-direction: column;
 
   letter-spacing: -0.1px;
-
-  cursor: default;
 }
 
 .stories-link {
@@ -782,8 +776,6 @@ h3 {
   font-weight: 500;
   line-height: 21.17px;
   color: var(--second-text-color);
-
-  cursor: default;
 }
 
 .footer-navigation-list {
