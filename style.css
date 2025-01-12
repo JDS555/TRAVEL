@@ -93,7 +93,7 @@ button {
   --second-text-color: #FFFFFF;
   --background-nav-block: #f2785cb3;
   --uncurrent-tabs-placeholder: #F2785C;
-  --initial-buttons: #0D606F;
+  --buttons: #0D606F;
   --background-input-stories: #FFFFFFB3;
   --button-navigation-animation: #0d606fd3;
   --radio-buttons: #F2785C80;
@@ -167,7 +167,7 @@ h3 {
   color: var(--main-text-color);
 }
 
-.initial-button {
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,19 +175,19 @@ h3 {
   color: var(--second-text-color);
 
   border-radius: 10px;
-  background-color: var(--initial-buttons);
+  background-color: var(--buttons);
 
   cursor: pointer;
 }
 
-.initial-button:focus,
-.initial-button:hover {
+.button:focus,
+.button:hover {
   background-color: var(--button-navigation-animation);
 
   transition: 0.2s;
 }
 
-.initial-button:active {
+.button:active {
   position: relative;
   top: 1px;
   left: 1px;
@@ -198,7 +198,7 @@ h3 {
   transition-duration: 1s, 1s;
 }
 
-.initial-arrow-button {
+.button-arrow {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -208,10 +208,10 @@ h3 {
   gap: 10px;
 
   border-radius: 10px;
-  background-color: var(--initial-buttons);
+  background-color: var(--buttons);
 }
 
-.initial-arrow-button-decorator {
+.button-arrow-decorator {
   margin-bottom: 1px;
   margin-right: 5px;
   width: 40px;
@@ -220,7 +220,7 @@ h3 {
   background-image: url("./assets/icons/arrow-right-logo.svg");
 }
 
-.initial-arrow-button-text {
+.button-arrow-text {
   margin-top: 3px;
 
   font-family: "Red Hat Text", serif;
@@ -230,14 +230,14 @@ h3 {
   color: var(--second-text-color);
 }
 
-.initial-arrow-button:focus,
-.initial-arrow-button:hover {
+.button-arrow:focus,
+.button-arrow:hover {
   background-color: var(--button-navigation-animation);
 
   transition: 0.2s;
 }
 
-.initial-arrow-button:active {
+.button-arrow:active {
   position: relative;
   top: 1px;
   left: 1px;
@@ -670,10 +670,11 @@ h3 {
   z-index: -5;
 
   width: 100%;
-  height: 1332px;
+  min-height: 1332px;
 
-  background-image: url(./assets/images/background-stories-footer-D.png);
+  background-image: url("./assets/images/background-stories-footer-D.png");
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
