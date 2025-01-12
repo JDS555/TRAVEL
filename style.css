@@ -658,7 +658,7 @@ h3 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 0 95px;
+  padding: 0 120px;
   padding-top: 40px;
 
   background-color: var(--background-input-stories);
@@ -670,7 +670,7 @@ h3 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 0 20px;
+  /* padding: 0 15px; */
   row-gap: 30px;
 }
 
@@ -679,7 +679,7 @@ h3 {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  gap: 48px;
+  gap: 40px;
 }
 
 .stories-image {
@@ -737,7 +737,6 @@ h3 {
   position: absolute;
   bottom: 0px;
 
-  z-index: 3;
   background: transparent;
   align-items: flex-end;
   padding-top: 20px;
