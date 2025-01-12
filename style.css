@@ -149,7 +149,7 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 
   font-family: "Red Hat Text", serif;
   font-size: 40px;
@@ -755,11 +755,15 @@ h3 {
 */
 
 .footer {
-  position: relative;
+  position: absolute;
+  bottom: -62px;
+  left: 180px;
+
   z-index: 3;
   background: transparent;
   align-items: flex-end;
-
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .footer-navigation-wrapper {
@@ -789,29 +793,23 @@ h3 {
   display: block;
   width: 33.65px;
   height: 33.65px;
+
+  background-position: center;
+
+  transition: 0.48s;
 }
 
 .link-instagram {
   background-image: url("./assets/icons/icon-instagram.svg");
-  background-position: center;
-
-  transition: 0.48s;
 }
 
 .link-youtube {
   background-image: url("./assets/icons/icon-youtube.svg");
-  background-position: center;
-
-  transition: 0.48s;
 }
 
 .link-twitter {
   background-image: url("./assets/icons/icon-twitter.svg");
-  background-position: center;
-
-  transition: 0.48s;
 }
-
 
 .link-instagram:hover,
 .link-instagram:focus,
