@@ -170,7 +170,8 @@ h3 {
 }
 
 .header,
-.footer {
+.footer,
+.preview {
   padding: 0 120px;
 }
 
@@ -361,7 +362,6 @@ h3 {
 
 .preview {
   display: flex;
-  padding-left: 120px;
 
   background-image: url(./assets/images/background-preview-D.png);
   background-repeat: no-repeat;
@@ -382,6 +382,7 @@ h3 {
 }
 
 .preview-lead {
+  margin-bottom: 30px;
   font-size: 80px;
   font-weight: 700;
   line-height: 96px;
@@ -389,8 +390,7 @@ h3 {
 }
 
 .preview-text {
-  margin-top: 31px;
-
+  margin-bottom: 60px;
   font-style: italic;
   font-weight: 700;
   color: var(--second-text-color);
@@ -427,8 +427,8 @@ h3 {
 }
 
 .form-button {
-  position: relative;
-  top: 76px;
+  position: absolute;
+  top: 16px;
   right: 18px;
 
   display: flex;
@@ -444,7 +444,7 @@ h3 {
   color: var(--second-text-color);
 
   border-radius: 10px;
-  background-color: var(--initial-buttons);
+  background-color: var(--buttons);
 
   cursor: pointer;
 }
