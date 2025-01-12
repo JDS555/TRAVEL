@@ -171,7 +171,8 @@ h3 {
 
 .header,
 .footer,
-.preview {
+.preview,
+.steps {
   padding: 0 120px;
 }
 
@@ -372,10 +373,8 @@ h3 {
   flex-direction: column;
   align-items: flex-start;
 
-  padding-top: 122px;
-  padding-right: 20px;
-
-  margin-bottom: 260px;
+  margin-top: 122px;
+  margin-bottom: 254px;
 
   width: 100%;
   max-width: 932px;
@@ -476,7 +475,6 @@ h3 {
 .steps {
   display: flex;
   justify-content: center;
-  padding: 0 82px;
 }
 
 .steps-wrapper {
@@ -484,8 +482,8 @@ h3 {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-top: 77px;
-  padding-bottom: 100px;
+  margin-top: 77px;
+  margin-bottom: 100px;
 }
 
 .steps-list {
@@ -493,8 +491,6 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  max-width: 1247px;
-  padding-right: 20px;
 }
 
 .steps-item {
@@ -531,22 +527,16 @@ h3 {
 }
 
 .steps-item:nth-child(1) .step-text::before {
-  margin-right: 20px;
-
   background-image: url("./assets/images/background-step-1-D.png");
   background-repeat: no-repeat;
 }
 
 .steps-item:nth-child(2) .step-text::before {
-  margin-left: 15px;
-
   background-image: url("./assets/images/background-step-2-D.png");
   background-repeat: no-repeat;
 }
 
 .steps-item:nth-child(3) .step-text::before {
-  margin-right: 5px;
-
   background-image: url("./assets/images/background-step-3-D.png");
   background-repeat: no-repeat;
 }
