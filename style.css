@@ -140,6 +140,13 @@ footer {
   cursor: default;
 }
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+header {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
 h1 {
   font-family: "Magra", sans-serif;
   font-size: 32px;
@@ -264,7 +271,7 @@ h3 {
   background-color: var(--background-nav-block);
 }
 
-.main-navigation {
+.main-navigation-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
