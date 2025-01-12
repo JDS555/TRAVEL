@@ -93,7 +93,7 @@ button {
   --second-text-color: #FFFFFF;
   --background-nav-block: #f2785cb3;
   --uncurrent-tabs-placeholder: #F2785C;
-  --initial-buttons: #0D606F;
+  --buttons: #0D606F;
   --background-input-stories: #FFFFFFB3;
   --button-navigation-animation: #0d606fd3;
   --radio-buttons: #F2785C80;
@@ -140,6 +140,7 @@ footer {
   cursor: default;
 }
 
+
 h1 {
   font-family: "Magra", sans-serif;
   font-size: 32px;
@@ -149,7 +150,7 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 
   font-family: "Red Hat Text", serif;
   font-size: 40px;
@@ -167,7 +168,14 @@ h3 {
   color: var(--main-text-color);
 }
 
-.initial-button {
+.header,
+.footer,
+.preview,
+.steps {
+  padding: 0 120px;
+}
+
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,19 +183,19 @@ h3 {
   color: var(--second-text-color);
 
   border-radius: 10px;
-  background-color: var(--initial-buttons);
+  background-color: var(--buttons);
 
   cursor: pointer;
 }
 
-.initial-button:focus,
-.initial-button:hover {
+.button:focus,
+.button:hover {
   background-color: var(--button-navigation-animation);
 
   transition: 0.2s;
 }
 
-.initial-button:active {
+.button:active {
   position: relative;
   top: 1px;
   left: 1px;
@@ -198,7 +206,7 @@ h3 {
   transition-duration: 1s, 1s;
 }
 
-.initial-arrow-button {
+.button-arrow {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -208,21 +216,19 @@ h3 {
   gap: 10px;
 
   border-radius: 10px;
-  background-color: var(--initial-buttons);
+  background-color: var(--buttons);
+
+  cursor: pointer;
 }
 
-.initial-arrow-button-decorator {
-  margin-bottom: 1px;
-  margin-right: 5px;
+.button-arrow-decorator {
   width: 40px;
   height: 40px;
 
   background-image: url("./assets/icons/arrow-right-logo.svg");
 }
 
-.initial-arrow-button-text {
-  margin-top: 3px;
-
+.button-arrow-text {
   font-family: "Red Hat Text", serif;
   font-size: 24px;
   font-weight: 500;
@@ -230,14 +236,14 @@ h3 {
   color: var(--second-text-color);
 }
 
-.initial-arrow-button:focus,
-.initial-arrow-button:hover {
+.button-arrow:focus,
+.button-arrow:hover {
   background-color: var(--button-navigation-animation);
 
   transition: 0.2s;
 }
 
-.initial-arrow-button:active {
+.button-arrow:active {
   position: relative;
   top: 1px;
   left: 1px;
@@ -264,17 +270,13 @@ h3 {
   background-color: var(--background-nav-block);
 }
 
-.main-navigation {
+.main-navigation-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1230px;
-  padding-top: 10px;
-  padding-right: 16px;
-  padding-bottom: 10px;
-  padding-left: 16px;
+  padding: 10px 0;
 
   color: var(--second-text-color);
 }
@@ -283,17 +285,18 @@ h3 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 15px;
-  padding-bottom: 16px;
+  padding: 15px 0;
 
   cursor: pointer;
+}
+
+.main-navigation {
+  padding: 0 20px;
 }
 
 .navigation-list {
   display: flex;
   flex-direction: row;
-  margin-right: 45px;
-  padding-left: 20px;
   gap: 42px;
 
   max-width: 547px;
@@ -305,8 +308,7 @@ h3 {
 
 .navigation-link {
   position: relative;
-  padding-top: 22px;
-  padding-bottom: 24px;
+  padding: 24px 0;
 
   font-family: "Red Hat Text", serif;
   font-size: 16px;
@@ -362,7 +364,6 @@ h3 {
 
 .preview {
   display: flex;
-  padding-left: 120px;
 
   background-image: url(./assets/images/background-preview-D.png);
   background-repeat: no-repeat;
@@ -373,16 +374,15 @@ h3 {
   flex-direction: column;
   align-items: flex-start;
 
-  padding-top: 122px;
-  padding-right: 20px;
-
-  margin-bottom: 260px;
+  margin-top: 122px;
+  margin-bottom: 254px;
 
   width: 100%;
   max-width: 932px;
 }
 
 .preview-lead {
+  margin-bottom: 30px;
   font-size: 80px;
   font-weight: 700;
   line-height: 96px;
@@ -390,8 +390,7 @@ h3 {
 }
 
 .preview-text {
-  margin-top: 31px;
-
+  margin-bottom: 60px;
   font-style: italic;
   font-weight: 700;
   color: var(--second-text-color);
@@ -428,8 +427,8 @@ h3 {
 }
 
 .form-button {
-  position: relative;
-  top: 76px;
+  position: absolute;
+  top: 16px;
   right: 18px;
 
   display: flex;
@@ -445,7 +444,7 @@ h3 {
   color: var(--second-text-color);
 
   border-radius: 10px;
-  background-color: var(--initial-buttons);
+  background-color: var(--buttons);
 
   cursor: pointer;
 }
@@ -477,8 +476,6 @@ h3 {
 .steps {
   display: flex;
   justify-content: center;
-  padding-left: 82px;
-  padding-right: 82px;
 }
 
 .steps-wrapper {
@@ -486,8 +483,8 @@ h3 {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-top: 77px;
-  padding-bottom: 100px;
+  margin-top: 77px;
+  margin-bottom: 100px;
 }
 
 .steps-list {
@@ -495,8 +492,6 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  max-width: 1247px;
-  padding-right: 20px;
 }
 
 .steps-item {
@@ -515,8 +510,6 @@ h3 {
   align-items: center;
 
   font-family: "Aleo", serif;
-
-  cursor: default;
 }
 
 .step-text::before {
@@ -533,22 +526,16 @@ h3 {
 }
 
 .steps-item:nth-child(1) .step-text::before {
-  margin-right: 20px;
-
   background-image: url("./assets/images/background-step-1-D.png");
   background-repeat: no-repeat;
 }
 
 .steps-item:nth-child(2) .step-text::before {
-  margin-left: 15px;
-
   background-image: url("./assets/images/background-step-2-D.png");
   background-repeat: no-repeat;
 }
 
 .steps-item:nth-child(3) .step-text::before {
-  margin-right: 5px;
-
   background-image: url("./assets/images/background-step-3-D.png");
   background-repeat: no-repeat;
 }
@@ -600,8 +587,6 @@ h3 {
   line-height: 42.34px;
   color: var(--second-text-color);
   text-transform: uppercase;
-
-  cursor: default;
 }
 
 .radio-wrapper {
@@ -655,37 +640,16 @@ h3 {
 */
 
 .stories {
-  position: relative;
-  z-index: 3;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+  padding-bottom: 65px;
 
-.background-stories-footer {
-  position: absolute;
-  top: 94px;
-  z-index: -5;
-
-  width: 100%;
-  height: 1332px;
-
-  background-image: url(./assets/images/background-stories-footer-D.png);
-  background-position: center;
+  background-image: url("./assets/images/background-stories-footer-D.png");
+  background-position: 0 95px;
+  background-size: cover;
   background-repeat: no-repeat;
-}
-
-.stories-background-wrapper {
-  position: absolute;
-  top: 93px;
-  z-index: -3;
-
-  width: 100%;
-  min-height: 1270px;
-
-  background-color: #FFFFFF4D;
 }
 
 .stories-list-wrapper {
@@ -694,9 +658,8 @@ h3 {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 0 120px;
   padding-top: 40px;
-  padding-right: 95px;
-  padding-left: 95px;
 
   background-color: var(--background-input-stories);
 }
@@ -707,6 +670,7 @@ h3 {
   justify-content: center;
   align-items: center;
   width: 100%;
+  /* padding: 0 15px; */
   row-gap: 30px;
 }
 
@@ -715,15 +679,13 @@ h3 {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  gap: 40px;
 }
 
 .stories-image {
   width: 400px;
   height: 250px;
   border-radius: 16px;
-  margin-right: 48px;
 
   box-shadow: 0px 4px 4px 0px #0D606F;
 }
@@ -732,16 +694,14 @@ h3 {
   display: flex;
   flex-direction: column;
   height: 100%;
+  gap: 24px;
   min-height: 250px;
 }
 
 .stories-text {
-  margin-top: 24px;
   flex-direction: column;
 
   letter-spacing: -0.1px;
-
-  cursor: default;
 }
 
 .stories-link {
@@ -764,8 +724,7 @@ h3 {
 }
 
 .stories-button {
-  margin-top: 40px;
-  margin-bottom: 42px;
+  margin: 40px 0;
 }
 
 /*
@@ -775,13 +734,13 @@ h3 {
 */
 
 .footer {
-  position: relative;
-  z-index: 3;
+  position: absolute;
+  bottom: 0px;
+
   background: transparent;
   align-items: flex-end;
-  padding-top: 15px;
-  padding-right: 121px;
-  padding-bottom: 12px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .footer-navigation-wrapper {
@@ -798,8 +757,6 @@ h3 {
   font-weight: 500;
   line-height: 21.17px;
   color: var(--second-text-color);
-
-  cursor: default;
 }
 
 .footer-navigation-list {
@@ -813,29 +770,23 @@ h3 {
   display: block;
   width: 33.65px;
   height: 33.65px;
+
+  background-position: center;
+
+  transition: 0.48s;
 }
 
 .link-instagram {
   background-image: url("./assets/icons/icon-instagram.svg");
-  background-position: center;
-
-  transition: 0.48s;
 }
 
 .link-youtube {
   background-image: url("./assets/icons/icon-youtube.svg");
-  background-position: center;
-
-  transition: 0.48s;
 }
 
 .link-twitter {
   background-image: url("./assets/icons/icon-twitter.svg");
-  background-position: center;
-
-  transition: 0.48s;
 }
-
 
 .link-instagram:hover,
 .link-instagram:focus,

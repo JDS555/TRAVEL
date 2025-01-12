@@ -21,27 +21,29 @@
 
 <body>
   <header class="header">
-    <nav class="main-navigation">
+    <div class="main-navigation-wrapper">
       <a class="main-logo-link" href="index.html">
         <img class="main-logo" src="./assets/icons/main-logo-D.svg" width="30" height="30" alt="T">
         <h1 class="main-logo-header">Travel Portal</h1>
       </a>
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#preview">How It Works</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#steps">Plan Your Trip</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#destinations">Destinations</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#stories">Travel Stories</a>
-        </li>
-      </ul>
-      <button class="login-button initial-button" type="button">Login</button>
-    </nav>
+      <nav class="main-navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#preview">How It Works</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#steps">Plan Your Trip</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#destinations">Destinations</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#stories">Travel Stories</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="login-button button" type="button">Login</button>
+    </div>
   </header>
   <main class="main">
     <section class="preview" id="preview">
@@ -100,16 +102,14 @@
         <input class="radio" type="radio" name="page" value="pageThree">
       </div>
       <div class="destinations-button-wrapper">
-        <button class="initial-arrow-button destinations-button" type="button">
-          <span class="initial-arrow-button-decorator"></span>
-          <span class="initial-arrow-button-text">Find More</span>
+        <button class="button-arrow destinations-button" type="button">
+          <span class="button-arrow-decorator"></span>
+          <span class="button-arrow-text">Find More</span>
         </button>
       </div>
     </section>
     <section class="stories" id="stories">
       <h2 class="stories-header">Travel stories</h2>
-      <div class="background-stories-footer"></div>
-      <div class="stories-background-wrapper"></div>
       <div class="stories-list-wrapper">
         <ul class="stories-list">
           <li class="stories-item">
@@ -206,9 +206,9 @@
           </li>
         </ul>
         <div class="stories-button-wrapper">
-          <button class="initial-arrow-button stories-button" type="button">
-            <span class="initial-arrow-button-decorator"></span>
-            <span class="initial-arrow-button-text">See More</span>
+          <button class="button-arrow stories-button" type="button">
+            <span class="button-arrow-decorator"></span>
+            <span class="button-arrow-text">See More</span>
           </button>
         </div>
       </div>
