@@ -281,6 +281,13 @@ h3 {
   color: var(--second-text-color);
 }
 
+.wrapper-burger-menue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 72%;
+}
+
 .main-logo-link {
   display: flex;
   flex-direction: row;
@@ -853,6 +860,13 @@ h3 {
   .steps {
     padding: 0 6%;
   }
+
+  /* ВРЕМЕННО СКРЫЛ */
+  .main-navigation,
+  .login-button {
+    display: none;
+  }
+
 }
 
 @media (max-width: 1093px) {
@@ -866,12 +880,6 @@ h3 {
 }
 
 @media (max-width: 993px) {
-
-  /* ВРЕМЕННО СКРЫЛ */
-  .main-navigation,
-  .login-button {
-    display: none;
-  }
 
   .preview-wrapper {
     margin-bottom: 204px;
@@ -898,7 +906,22 @@ h3 {
   }
 }
 
-@media (max-width: 893px) {
+@media (max-width: 390px) {
+
+  body {
+    font-size: 9px;
+    line-height: 10.8px;
+  }
+
+  h2 {
+    font-size: 14px;
+    line-height: 18.52px;
+  }
+
+  h3 {
+    font-size: 11px;
+    line-height: 13.2px;
+  }
 
   .header {
     padding-top: 20px;
