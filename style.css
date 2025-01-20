@@ -880,6 +880,13 @@ h3 {
 
 @media (max-width: 921px) {
 
+  .header,
+  .footer,
+  .preview,
+  .steps {
+    padding: 0 4%;
+  }
+
   .preview-wrapper {
     margin-top: 202px;
     margin-bottom: 154px;
@@ -889,4 +896,32 @@ h3 {
   .preview-text {
     display: none;
   }
+}
+
+@media (max-width: 893px) {
+
+  .header {
+    padding-top: 20px;
+
+    background: transparent;
+    background: linear-gradient(180deg, rgba(13, 96, 111, 1) 0%, rgba(13, 96, 111, 0.01) 55%);
+    box-shadow: none;
+  }
+
+  .main-logo-link {
+    padding: 15px 0;
+  }
+
+  .main-logo-header {
+    display: none;
+  }
+
+  .preview {
+    background-image: url(./assets/images/background-preview-M.png);
+  }
+
+  .preview-wrapper {
+    margin: 154px 0;
+  }
+
 }
