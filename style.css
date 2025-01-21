@@ -357,6 +357,35 @@ h3 {
   border-radius: 10px;
 }
 
+.wrapper-burger-menue-button {
+  position: relative;
+}
+
+.burger-menue-button {
+  display: none;
+  width: 55px;
+  height: 55px;
+  background: url("./assets/icons/icon-burger-menue.svg");
+  background-position: center;
+  background-size: cover;
+
+  transition: 0.48s;
+}
+
+.burger-menue-button:hover,
+.burger-menue-button:focus,
+.burger-menue-button:active {
+  background-image: url("./assets/icons/icon-burger-menue-actve.svg");
+
+  transition: 0.48s;
+}
+
+.burger-menue-button:active {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+
 /*
 ///
 !!!MAIN
@@ -373,7 +402,9 @@ h3 {
   display: flex;
 
   background-image: url(./assets/images/background-preview-D.png);
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .preview-wrapper {
@@ -828,6 +859,10 @@ h3 {
 
 @media (max-width: 1293px) {
 
+  .navigation-list {
+    gap: 30px;
+  }
+
   .destinations-wrapper {
     justify-content: center;
   }
@@ -861,12 +896,9 @@ h3 {
     padding: 0 6%;
   }
 
-  /* ВРЕМЕННО СКРЫЛ */
-  .main-navigation,
-  .login-button {
-    display: none;
+  .navigation-list {
+    gap: 20px;
   }
-
 }
 
 @media (max-width: 1093px) {
@@ -880,6 +912,21 @@ h3 {
 }
 
 @media (max-width: 993px) {
+
+  /* ВРЕМЕННО СКРЫЛ */
+  .main-navigation,
+  .login-button {
+    display: none;
+  }
+
+  .wrapper-burger-menue {
+    justify-content: flex-end;
+    width: 50%;
+  }
+
+  .burger-menue-button {
+    display: block;
+  }
 
   .preview-wrapper {
     margin-bottom: 204px;
@@ -906,6 +953,52 @@ h3 {
   }
 }
 
+@media (max-width: 793px) {
+
+  body {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 28.52px;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 38.52px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 29.2px;
+  }
+
+  .header {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .burger-menue-button {
+    width: 41px;
+    height: 41px;
+  }
+
+  .header {
+    background: linear-gradient(180deg, rgba(13, 96, 111, 1) 0%, rgba(13, 96, 111, 0.01) 55%);
+  }
+
+
+}
+
+@media (max-width: 693px) {
+
+  .wrapper-burger-menue {
+    width: 30%;
+  }
+}
+
 @media (max-width: 390px) {
 
   body {
@@ -925,10 +1018,6 @@ h3 {
 
   .header {
     padding-top: 20px;
-
-    background: transparent;
-    background: linear-gradient(180deg, rgba(13, 96, 111, 1) 0%, rgba(13, 96, 111, 0.01) 55%);
-    box-shadow: none;
   }
 
   .main-logo-link {
