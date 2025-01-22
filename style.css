@@ -547,6 +547,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
   font-family: "Aleo", serif;
 }
@@ -937,7 +938,6 @@ h3 {
   .step-text {
     font-size: 18px;
     line-height: 12px;
-    text-align: left;
   }
 }
 
@@ -989,18 +989,6 @@ h3 {
 
   .step-item {
     width: 250px;
-  }
-
-  .step-text {
-    text-align: center;
-  }
-
-  .step-item:nth-child(1) {
-    text-align: left;
-  }
-
-  .step-text:nth-child(3) {
-    text-align: right;
   }
 }
 
@@ -1145,12 +1133,15 @@ h3 {
   }
 
   .steps-item {
-    width: 98px;
+    width: 94px;
   }
 
   .steps-item:nth-child(3) {
-    width: 111px;
-    margin: 0;
+    width: 98px;
+  }
+
+  .steps-item:nth-child(2) {
+    width: 120px;
   }
 
   .step-text::before {
@@ -1160,6 +1151,7 @@ h3 {
 
   .steps-item:nth-child(1) .step-text::before {
     background-image: url("./assets/images/background-step-1-M.png");
+    align-self: flex-start;
   }
 
   .steps-item:nth-child(2) .step-text::before {
@@ -1168,11 +1160,21 @@ h3 {
 
   .steps-item:nth-child(3) .step-text::before {
     background-image: url("./assets/images/background-step-3-M.png");
+    align-self: flex-end;
   }
 
   .step-text {
     font-size: 10px;
     line-height: 12px;
+    text-align: center;
+  }
+
+  .step-text-1 {
+    text-align: left;
+  }
+
+  .step-text-3 {
+    text-align: right;
   }
 }
 
