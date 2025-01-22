@@ -172,7 +172,7 @@ h3 {
 .footer,
 .preview,
 .steps {
-  padding: 0 8.3%;
+  padding: 0 120px;
 }
 
 .button {
@@ -865,6 +865,15 @@ h3 {
 */
 
 @media (max-width: 1293px) {
+
+  /* global styles */
+
+  .header,
+  .footer,
+  .preview,
+  .steps {
+    padding: 0 8.3%;
+  }
 
   /* header */
 
