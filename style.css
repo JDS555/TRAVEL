@@ -1312,6 +1312,8 @@ h3 {
     margin: 0;
     margin-bottom: 20px;
   }
+
+
 }
 
 /* 
@@ -1322,20 +1324,14 @@ h3 {
 
 @media (max-width: 593px) {
 
-  /* header */
-
-  .wrapper-burger-menue-open {
-    position: absolute;
-    right: -19px;
-    top: 40px;
-  }
-
   /* preview */
 
   .preview-wrapper {
     margin-top: 154px;
     margin-bottom: 61px;
   }
+
+
 }
 
 /* 
@@ -1366,5 +1362,3 @@ h3 {
     max-width: 360px;
   }
 }
-
-/* !!! */
