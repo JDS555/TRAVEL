@@ -707,9 +707,9 @@ h3 {
   padding-bottom: 65px;
 
   background-image: url("./assets/images/background-stories-footer-D.png");
+  background-repeat: no-repeat;
   background-position: 0 95px;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .stories-list-wrapper {
@@ -1005,10 +1005,6 @@ h3 {
     padding: 20px 40px 0 40px;
   }
 
-  .stories-item {
-    gap: 20px;
-  }
-
   .stories-text-wrapper {
     gap: 10px;
   }
@@ -1085,6 +1081,8 @@ h3 {
     display: block;
     width: 32px;
     height: 32px;
+
+    transition: 0.15s;
   }
 
   .navigation-item-account,
@@ -1096,7 +1094,7 @@ h3 {
   .burger-menue-button-close {
     background: url("./assets/icons/icon-burger-menue-close.svg");
 
-    transition: 0.48s;
+    transition: 0.15s;
   }
 
   .burger-menue-button-close:hover,
@@ -1109,6 +1107,8 @@ h3 {
     position: relative;
     top: 1px;
     left: 1px;
+
+    transition: 0.15s;
   }
 
   /* BURGER MENUE ACTIVE */
@@ -1365,7 +1365,7 @@ h3 {
   }
 
   .stories-list {
-    gap: 10px;
+    gap: 15px;
   }
 
   .stories-image {
@@ -1402,9 +1402,9 @@ h3 {
 
 /* !!! 593 */
 
-/* ПРОДОЛЖИТЬ ЗДЕСЬ 593-->390-->320!!! */
-
 @media (max-width: 593px) {
+
+  /* global styles */
 
   /* BURGER MENUE ACTIVE */
   .wrapper-burger-menue-open {
@@ -1420,7 +1420,7 @@ h3 {
 
   /* stories */
   .stories-list-wrapper {
-    padding: 10px 15px 0 15px;
+    padding: 15px 15px 0 15px;
   }
 
   .stories-image {
@@ -1441,6 +1441,70 @@ h3 {
   .image-3-M,
   .image-4-M {
     display: block;
+  }
+
+}
+
+/* !!! 493 */
+
+@media (max-width: 493px) {
+
+  /* stories */
+
+  .stories-header {
+    margin-bottom: 10px;
+  }
+
+  .stories {
+    background-image: url("./assets/images/background-stories-footer-M.png");
+    background-position: 0 30px;
+  }
+
+  .stories-list-wrapper {
+    padding: 10px 15px 0px 15px;
+  }
+
+  .stories-list {
+    gap: 15px;
+  }
+
+  .stories-item {
+    gap: 10px;
+  }
+
+  .stories-item-header {
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13.2px;
+  }
+
+  .stories-image {
+    width: 155px;
+  }
+
+  .stories-text-wrapper {
+    gap: 10px;
+  }
+
+  .stories-text {
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 10.8px;
+    letter-spacing: -1.05px;
+  }
+
+  /* footer */
+
+  .footer {
+    align-items: center;
+  }
+
+  .footer-navigation-wrapper {
+    width: 140px;
+  }
+
+  .copyright {
+    display: none;
   }
 }
 
