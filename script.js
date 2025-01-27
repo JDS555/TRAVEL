@@ -22,3 +22,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
     burgerMenue.classList.remove("wrapper-burger-menue-open");
   });
 }
+
+// CLOSE THE BURGER MENU WHEN CLICKING ON THE PAGE
+// *Не сделал пока не понял как сделать
+// подумаю как - реализую
