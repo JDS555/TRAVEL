@@ -1,9 +1,8 @@
-"use strict"
+"use strict";
 
 // BURGER MENUE
 
 // BURGER MENUE BUTTON
-
 const burgerMenueButton = document.querySelector(".burger-menue-button");
 const burgerMenue = document.querySelector(".wrapper-burger-menue");
 const navigationLinks = document.querySelectorAll(".navigation-link");
@@ -24,5 +23,5 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 // CLOSE THE BURGER MENU WHEN CLICKING ON THE PAGE
-// *Не сделал пока не понял как сделать
-// подумаю как - реализую
+// ДОЛГ !!!
+// СДЕЛАТЬ ПРИ TRAVEL-3
